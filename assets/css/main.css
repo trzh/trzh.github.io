@@ -2100,6 +2100,9 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.35em;
 			display: block;
+			
+		border-width: 3px;
+		border-color: black;
 		}
 
 		.image.left {
