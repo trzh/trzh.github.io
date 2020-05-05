@@ -3,10 +3,13 @@
 
 ol, ul {
 	list-style: none;
+	padding-left: 30px;
+	font-size: 17px;
+	font-family: Cardo, serif;
 }
 
 strong, b {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 em, i {
@@ -25,7 +28,7 @@ nav {
 	height: 100%;
 }
 
-nav li {
+nav a {
   	margin-right: 10px;
   	margin-left: 10px;
 	cursor: pointer;
@@ -40,41 +43,43 @@ nav li {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
 }
 
-#main {
+.main {
 	padding-left: 100px;
 	padding-right: 100px;
+	padding-bottom: 50px;
+
 }
 
 h1 {
 	font-size: 40px;
-	line-height: 1.5em;
-	font-weight: bold;
-	font-family: Anonymous Pro, monospace;
+	font-weight: 700;
+	font-family: Montserrat;
 }
 
 h2 {
 	font-size: 25px;
-	line-height: 1.5em;
-	font-family: Anonymous Pro, monospace;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 }
 
 h3 {
 	font-size: 18px;
-	line-height: 1.5em;
-	font-family: Anonymous Pro, monospace;
+	font-family: Montserrat, sans-serif;
 	font-weight: 400;
-	font-style: italic;
-	color: #45c99f;
+	color: #798f20;
 }
 
 h4 {
-	font-family: Anonymous Pro, monospace;
+	font-family: Montserrat, sans-serif;
 	font-size: 15px;
+	line-height: 0px;
 	color: #8e8e8e;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 .projects {
@@ -131,17 +136,17 @@ h4 {
 	vertical-align: middle;
 }
 
-div.job h3{
+div.experience h3 {
 	font-style: normal;
 }
 
-p {
-	font-family: Open Sans, sans-serif;
-	font-size: 18px;
+div.experience h4, div.section p, #header p {
+	margin-left:30px;
 }
 
-ul, p {
-	font-family: Open Sans, sans-serif;
+p {
+	font-family: Cardo, sans-serif;
+	font-size: 17px;
 }
 
 a {
@@ -149,19 +154,25 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	color: #45c99f;
-	text-decoration: underline;
-	font-family: Open Sans, sans-serif;
+	color: #f06449;
+	text-decoration: none;
+	font-family: Cardo, serif;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: pink;
 }
 
 footer {
 	position: relative;
 	text-align: center;
+}
+
+footer a {
+  	margin-right: 10px;
+  	margin-left: 10px;
+  	font-family: Montserrat, sans-serif;
+  	font-weight: 300;
 }
 
 .row {
@@ -185,3 +196,17 @@ footer {
 	height:100%;
 	margin-bottom: 200px;
 }
+
+.portfolio {
+	width:100%;
+    margin-left: 0px;
+    height: 680px;
+    margin-bottom: 0px;
+}
+
+.skill img {
+	padding:30px;
+	width: 35%;
+	float: left;
+}
+
