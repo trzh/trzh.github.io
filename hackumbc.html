@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<!--
+	hello & welcome to my code :-)
+-->
+
+<html>
+	<head>
+		<title>TIRZAH KHAN</title>
+
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">		
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<nav>
+				<ul>
+					<li><a href="images/tirzah khan resume.pdf" target="_blank">resume</a></li>
+					<li><a href = "about.html">about</a></li>
+					<li><a href = "index2.html">work</a></li>
+				</ul>
+			</nav>
+
+			<p class = "redesign"><i><span style = "font-size: 15px; color: #8e8e8e;">site is currently undergoing a redesign. thanks for your patience!</span></i></p>
+
+			<h1>hackUMBC.</h1>
+		</header>
+
+		<div class = "main mx-auto">
+
+			<div class="container">
+
+				<div class="w3-content" style="max-width:1200px">
+					<img class="slideshow" src="images/hackumbc/two days.png" style="display:block"/>
+					<img class="slideshow" src="images/hackumbc/tomorrow.png" style="display:none"/>
+					<img class="slideshow" src="images/hackumbc/walk-ins.png" style="display:none"/>
+					<img class="slideshow" src="images/hackumbc/profile.png" style="display:none"/>
+					<img class="slideshow" src="images/hackumbc/filter.png" style="display:none"/>
+
+					<div class="w3-row-padding w3-section slideshow-hints">
+						<div class="w3-col s1">
+							<img class="demo w3-opacity w3-hover-opacity-off" src="images/hackumbc/two days.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)"/>
+						</div>
+
+						<div class="w3-col s1">
+							<img class="demo w3-opacity w3-hover-opacity-off" src="images/hackumbc/tomorrow.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)"/>
+						</div>
+
+						<div class="w3-col s1">
+							<img class="demo w3-opacity w3-hover-opacity-off" src="images/hackumbc/walk-ins.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)"/>
+						</div>
+
+						<div class="w3-col s1">
+							<img class="demo w3-opacity w3-hover-opacity-off" src="images/hackumbc/profile.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)"/>
+						</div>
+
+						<div class="w3-col s1">
+							<img class="demo w3-opacity w3-hover-opacity-off" src="images/hackumbc/filter.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)"/>
+						</div>
+					</div>
+					<h3>fall 2019 social media graphics</h3>
+					<p>our fall 2019 theme was outer space, so all of our social media graphics reflected that theme. i designed instagram posts, a snapchat filter & a facebook profile border.</p>
+				</div>
+
+				<div class="w3-content" style="max-width:1200px">
+					<img class="slideshow" src="images/hackumbc/apps.png" style="display:block"/>
+					<h3>fall 2020 social media graphics</h3>
+					<p>we haven't chosen a 2020 theme yet but we want our marketing to remain within the hackUMBC brand and stay consistent across posts, so it was important to use similar visual hierarchies in the posts. for this year, i've only designed instagram posts & story graphics so far.</p>
+				</div>
+
+				<footer>
+
+					<a href="https://github.com/trzh/">github</a>
+					<a href="https://instagram.com/bytirzah/">instagram</a>
+					<a href="mailto: tk7@umbc.edu">email</a>
+
+					<p>&copy; Tirzah Khan</p>
+
+				</footer>
+			</div>
+		</div>
+
+		<!-- slideshow js -->
+		<script>
+		function currentDiv(n) {
+			showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("slideshow");
+			var dots = document.getElementsByClassName("demo");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+			}
+			x[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " w3-opacity-off";
+		}
+		</script>
+
+		<!-- bootstrap js -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	</body>
+</html>
