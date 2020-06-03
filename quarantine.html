@@ -19,6 +19,11 @@
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">		
 
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/site.webmanifest">
 	</head>
 
 	<body>
@@ -35,37 +40,37 @@
 
 			<p class = "redesign"><i><span style = "font-size: 15px; color: #8e8e8e;">site is currently undergoing a redesign. thanks for your patience!</span></i></p>
 
-			<h1>quarantine PSAs.</h1>
+			<h1>I designed anti-productivity culture graphics during quarantine.</h1>
 		</header>
 
 		<div class = "main mx-auto">
 
 			<div class="container">
 
-				<div class="w3-content" style="max-width:1200px">
-					<img class="slideshow" src="images/illustrations/contest.png" style="display:block"/>
-					<img class="slideshow" src="images/illustrations/joy after this.jpg" style="display:none"/>
-					<img class="slideshow" src="images/illustrations/take some time.jpg" style="display:none"/>
-					<img class="slideshow" src="images/illustrations/success.png" style="display:none"/>
+				<h4>SKILLS: ILLUSTRATION</h4>
+				<h4>TOOLS: ADOBE PHOTOSHOP, WACOM INTUOS TABLET</h4>
 
-					<div class="w3-row-padding w3-section slideshow-hints">
-						<div class="w3-col s2">
-							<img class="demo w3-opacity w3-hover-opacity-off" src="images/illustrations/contest.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)"/>
-						</div>
-						
-						<div class="w3-col s2">
-							<img class="demo w3-opacity w3-hover-opacity-off" src="images/illustrations/joy after this.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"/>
-						</div>
-
-						<div class="w3-col s2">
-							<img class="demo w3-opacity w3-hover-opacity-off" src="images/illustrations/take some time.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)"/>
-						</div>
-
-						<div class="w3-col s2">
-							<img class="demo w3-opacity w3-hover-opacity-off" src="images/illustrations/success.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)"/>
-						</div>
+				<div class = "row h-100">
+					<div class = "col-md-6 mx-auto">
+						<img src="images/illustrations/contest.png" class="img-fluid">
 					</div>
-					<p>after hearing a lot of dialogue about productivity culture during quarantine from friends, family and industry professionals alike, i decided to channel my frustration into something more, well, productive. i used a wacom intuos tablet to make these illustrations in photoshop after creating a few pen & paper sketches. i posted all of these on instagram as a way to spread more positive messages to people struggling with mental health during a very difficult time.</p>
+					<div class = "col-md-6 mx-auto">
+						<img src="images/illustrations/joy after this.jpg" class="img-fluid">
+					</div>
+				</div>
+
+				<div class = "row h-100">
+					<div class = "col-md-6 mx-auto">
+						<img src="images/illustrations/take some time.jpg" class="img-fluid">
+					</div>
+					<div class = "col-md-6 mx-auto">
+						<img src="images/illustrations/success.png" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="col-md-6 mx-auto project-text">
+					
+					<p>After hearing a lot of dialogue about productivity culture during quarantine from friends, family and industry professionals alike, I decided to channel my frustration into something more, well, productive. I posted all of these on <a href = "https://www.instagram.com/bytirzah/">Instagram</a> as a way to spread more positive messages to people struggling with mental health during a very difficult time.</p>
 				</div>
 
 			<footer>
@@ -79,29 +84,6 @@
 			</footer>
 		</div>
 	</div>
-
-		<!-- slideshow js -->
-		<script>
-		function currentDiv(n) {
-			showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("slideshow");
-			var dots = document.getElementsByClassName("demo");
-			if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length}
-			for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-			}
-			x[slideIndex-1].style.display = "block";
-			dots[slideIndex-1].className += " w3-opacity-off";
-		}
-		</script>
 
 		<!-- bootstrap js -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

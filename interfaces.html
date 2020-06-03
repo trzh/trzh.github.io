@@ -19,6 +19,11 @@
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">		
 
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/site.webmanifest">
 	</head>
 
 	<body>
@@ -35,63 +40,75 @@
 
 			<p class = "redesign"><i><span style = "font-size: 15px; color: #8e8e8e;">site is currently undergoing a redesign. thanks for your patience!</span></i></p>
 
-			<h1>user interface designs.</h1>
+			<h1>User interface designs.</h1>
 		</header>
 
 		<div class = "main mx-auto">
 
-			<!-- dailyUI -->
-			<div class = "row h-100">
+			<div class = "container">
 
-				<div class = "col-md-12 project-text">
-					<h3>#dailyUI challenge prompts</h3>
-					<p>i used photoshop to design interfaces following the hundred-day #dailyUI challenge prompts. here are some of the highlights.</p>
+				<div class = "project" style = "margin-top: 0px;">
+					<h3>#dailyUI</h3>
+					<h4>SKILLS: UI DESIGN, TYPOGRAPHY</h4>
+					<h4>TOOLS: ADOBE PHOTOSHOP</h4>
 				</div>
 
-				<div class = "col-md-3">
-					<img src="images/interfaces/checkout.jpg" class="img-fluid" alt="example of flyer design">
+				<div class = "row h-100">
+
+					<div class = "col-md-3">
+						<img src="images/interfaces/checkout.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-3">
+						<img src="images/interfaces/user profile.png" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-3">
+						<img src="images/interfaces/light mode calculator.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-3">
+						<img src="images/interfaces/dark mode calculator.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
 				</div>
 
-				<div class = "col-md-3">
-					<img src="images/interfaces/user profile.png" class="img-fluid" alt="example of flyer design">
-				</div>
+				<div class = "row h-100">
 
-				<div class = "col-md-3">
-					<img src="images/interfaces/light mode calculator.jpg" class="img-fluid" alt="example of flyer design">
-				</div>
+					<div class = "col-md-6">
+						<img src="images/interfaces/signup.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
 
-				<div class = "col-md-3">
-					<img src="images/interfaces/dark mode calculator.jpg" class="img-fluid" alt="example of flyer design">
+					<div class = "col-md-6">
+						<img src="images/interfaces/landing page.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-6 mx-auto project-text">
+						<p>i used photoshop to design interfaces following the hundred-day #dailyUI challenge prompts. these are some of the highlights.</p>
+					</div>
 				</div>
 			</div>
 
-			<div class = "row h-100">
-
-				<div class = "col-md-6">
-					<img src="images/interfaces/signup.jpg" class="img-fluid" alt="example of flyer design">
+			<div class = "container">
+				<div class = "project">
+					<h3>mental health resources website</h3>
+					<h4>SKILLS: UI DESIGN, TYPOGRAPHY</h4>
+					<h4>TOOLS: ADOBE PHOTOSHOP</h4>
 				</div>
 
-				<div class = "col-md-6">
-					<img src="images/interfaces/landing page.jpg" class="img-fluid" alt="example of flyer design">
+				<div class = "row h-100">
+					<div class = "col-md-6">
+						<img src="images/interfaces/mh1.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-6">
+						<img src="images/interfaces/mh2.jpg" class="img-fluid" alt="example of flyer design">
+					</div>
+
+					<div class = "col-md-6 mx-auto project-text">
+						<p>i used photoshop to design a basic hypothetical interface for a website that would mental health resources and allow the user to search through them using their symptoms and/or location.</p>
+					</div>
 				</div>
 
-			</div>
-
-			<!-- mental health -->
-			<div class = "row h-100">
-
-				<div class = "col-md-12 project-text">
-					<h3>mental health resources site.</h3>
-					<p>i used photoshop to design a basic hypothetical interface for a website that would mental health resources and allow the user to search through them using their symptoms and/or location.</p>
-				</div>
-
-				<div class = "col-md-6">
-					<img src="images/interfaces/mh1.jpg" class="img-fluid" alt="example of flyer design">
-				</div>
-
-				<div class = "col-md-6">
-					<img src="images/interfaces/mh2.jpg" class="img-fluid" alt="example of flyer design">
-				</div>
 			</div>
 
 			<footer>
@@ -103,30 +120,7 @@
 				<p>&copy; Tirzah Khan</p>
 
 			</footer>
-	</div>
-
-		<!-- slideshow js -->
-		<script>
-		function currentDiv(n) {
-			showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("slideshow");
-			var dots = document.getElementsByClassName("demo");
-			if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length}
-			for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-			}
-			x[slideIndex-1].style.display = "block";
-			dots[slideIndex-1].className += " w3-opacity-off";
-		}
-		</script>
+		</div>
 
 		<!-- bootstrap js -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
