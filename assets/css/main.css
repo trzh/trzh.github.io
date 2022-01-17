@@ -101,7 +101,7 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	color: #f06449;
+	color: #798f20;
 	text-decoration: none;
 	font-family: 'Cormorant Garamond', serif;
 	cursor: pointer;
@@ -109,7 +109,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	color: #f06449;
+	color: #798f20;
 	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -120,6 +120,7 @@ footer {
 	position: relative;
 	text-align: center;
 	padding-top:25px;
+	padding-bottom: 15px;
 }
 
 footer a {
