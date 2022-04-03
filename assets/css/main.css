@@ -109,8 +109,8 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
-	color: #798f20x;
+	text-decoration: none;
+	color: #E15C45;
 	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
