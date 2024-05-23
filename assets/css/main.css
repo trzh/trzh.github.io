@@ -4,15 +4,7 @@ ol, ul {
 	list-style: none;
 	padding-left: 0px;
 	font-size: 20px;
-	font-family: 'Cormorant Garamond', serif;
-}
-
-strong, b {
-	font-weight: 700;
-}
-
-em {
-	font-style: italic;
+	font-family: 'Urbanist', sans-serif;
 }
 
 header {
@@ -22,6 +14,7 @@ header {
 nav {
 	height: auto;
 	display: inline;
+	padding-bottom: 50px;
 }
 
 nav a {
@@ -37,84 +30,132 @@ nav a {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	font-family: 'Space Mono', monospace;
-	text-transform:uppercase;
+	font-family: 'Urbanist', sans-serif;
+	text-transform: capitalize;
 	font-weight: 400;
-	font-size: 15px;
-	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+	border: 1px solid #E6F2DF;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+nav a:hover {
+	border: 1px solid #171717;
+	border-radius: 50%;
+	padding: 5px;
+	color: #171717;
+	text-decoration: none;
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.noto-sans-hebrew {
+	font-family: font-family: "Noto Sans Hebrew", sans-serif;
+}
+
+.noto-sans-kr {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.noto-nastaliq-urdu {
+	font-family: "Noto Nastaliq Urdu", serif;
 }
 
 .redesign {
 	display:block;
 }
 
-.content {
-	width: 75%;
+body {
+	background-color: #E6F2DF;
+	width: 1000px;
     margin: 0 auto;
 }
 
 h1 {
-	font-size: 44px;
-	font-weight: 500;
-	font-family: swear-display, serif;
-	line-height: 50px;
-	padding-bottom: 0px;
-	letter-spacing: 1px;
+	font-size: 60px;
+	font-weight: 900;
+	font-family: 'Urbanist', sans-serif;
+	color:#171717;
+	line-height: 100%;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+.h1-index {
+	display:inline-block;
+	padding-bottom: 50px;
+	line-height: 140%;
+	font-size: 70px;
 }
 
 h2 {
-	font-size: 32px;
-	font-family: swear-display, serif;
-	line-height: 40px;
-	padding-bottom: 30px;
-	letter-spacing: 1px;
+	font-size: 26px;
+	font-family: 'Urbanist', sans-serif;
+	color:#171717;
+	padding-bottom: 0px;
 }
 
 h3 {
-	font-size: 26px;
-	font-family: swear-display, serif;
-	font-weight: 500;
-	font-style: italic;
-	color: #798f20;
+	font-size: 20px;
+	font-family: 'Urbanist', sans-serif;
+	font-weight: 400;
+	color: #171717;
 	line-height: 25px;
 	display: block;
-	letter-spacing: 1px;
 }
 
 h4 {
-	font-family: 'Space Mono', serif;
-	font-size: 15px;
+	font-family: 'Urbanist', sans-serif;
+	font-size: 14px;
+	color: #868686;
+	line-height: 18px;
+	font-weight: 400;
 	letter-spacing: 1px;
-	color: #8e8e8e;
-	line-height: 25px;
 	text-transform: uppercase;
 }
 
+.initials {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+}
+
 p {
-	font-family: 'Cormorant Garamond', serif;
-	font-size: 20px;
+	font-family: 'Urbanist', sans-serif;
+	font-size: 16px;
 	line-height: 26px;
 	text-align: left justify;
+	color:#171717;
+	font-weight: 500;
 }
 
 a {
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	color: #798f20;
-	text-decoration: none;
-	font-family: 'Cormorant Garamond', serif;
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	color: #171717;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #171717;
+	font-family: 'Urbanist', sans-serif;
 	cursor: pointer;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #E15C45;
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #B196DE;
+	color: #B196DE;
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 footer {
@@ -143,8 +184,14 @@ footer p {
 	transition: 0.5s all ease-in-out;
 }
 
-.img-fluid:hover {
+/*.img-fluid:hover {
 	transform: scale(1.02); 
+}*/
+
+.img-icon {
+	width:120px;
+	padding-right: 20px;
+	margin-left: -5px;
 }
 
 .case-study:hover{
@@ -156,6 +203,7 @@ footer p {
 	display:flex;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
+	flex-direction: row;
 }
 
 .row img {
@@ -187,4 +235,8 @@ footer p {
 
 .section {
 	padding-top: 0px;
+}
+
+.intro {
+	padding-bottom: 30px;
 }
