@@ -11,6 +11,32 @@ header {
 	padding-top: 100px;
 }
 
+a {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	color: #171717;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #171717;
+	font-family: 'Urbanist', sans-serif;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #B196DE;
+	color: #B196DE;
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
 nav {
 	height: auto;
 	display: inline;
@@ -50,6 +76,25 @@ nav a:hover {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.initials {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+
+.initials a {
+	text-decoration: none;
+	color: #171717;
+	border: 0px;
+}
+
+.initials a:hover {
+	text-decoration: none;
+	color: #171717;
+	border: 0px;
 }
 
 .noto-sans-hebrew {
@@ -117,12 +162,6 @@ h4 {
 	text-transform: uppercase;
 }
 
-.initials {
-	font-family: 'Urbanist', sans-serif;
-	font-size: 36px;
-	font-weight: 900;
-}
-
 p {
 	font-family: 'Urbanist', sans-serif;
 	font-size: 16px;
@@ -130,32 +169,6 @@ p {
 	text-align: left justify;
 	color:#171717;
 	font-weight: 500;
-}
-
-a {
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	color: #171717;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-thickness: 1px;
-	text-decoration-color: #171717;
-	font-family: 'Urbanist', sans-serif;
-	cursor: pointer;
-}
-
-a:hover {
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-thickness: 1px;
-	text-decoration-color: #B196DE;
-	color: #B196DE;
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 footer {
