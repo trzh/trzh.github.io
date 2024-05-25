@@ -217,10 +217,6 @@ footer p {
 	transition: 0.5s all ease-in-out;
 }
 
-/*.img-fluid:hover {
-	transform: scale(1.02); 
-}*/
-
 .img-icon {
 	width:120px;
 	padding-right: 20px;
@@ -251,15 +247,13 @@ footer p {
 
 .project-cover {
 	padding-top: 30px;
+	transition: 0.5s all ease-in-out;
 }
 
-.project-cover h3 {
-	padding-top: 15px;
-	padding-left: 15px;
-}
 
-.project-cover h4 {
-	padding-left: 15px;
+.project-cover:hover {
+	transform: scale(1.02);
+	transition: 0.5s all ease-in-out;
 }
 
 .project {
@@ -306,4 +300,13 @@ footer p {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.analyst-headline img {
+	margin-bottom: 10px;
+}
+
+.analyst-headline h3 {
+	padding-bottom: 15px;
+	font-size:16px;
 }
