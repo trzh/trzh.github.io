@@ -312,3 +312,14 @@ footer p {
 	padding-bottom: 15px;
 	font-size:16px;
 }
+
+.captioned-img img {
+	margin-bottom: 0px;
+}
+
+.caption {
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	margin-bottom: 30px;
+}
