@@ -248,14 +248,33 @@ footer p {
 }
 
 .project-cover {
+	text-decoration: none;
+}
+
+.project-cover img {
 	padding-top: 30px;
 	transition: 0.5s all ease-in-out;
 }
 
 
-.project-cover:hover {
+.project-cover img:hover {
 	transform: scale(1.02);
 	transition: 0.5s all ease-in-out;
+}
+
+.project-cover p {
+	padding-top: 10px;
+	margin-bottom: 0px;
+	line-height: 100%;
+}
+
+.project-cover h4 {
+	margin-bottom: 0px;
+	line-height: 100%;
+}
+
+.project-cover a {
+	text-decoration: none;
 }
 
 .project {
